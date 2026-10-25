@@ -1,0 +1,19 @@
+Package: caretS3
+Type: Package
+Title: A Minimal S3 Interface to 'caret' Models Without Resampling
+Version: 0.1.0
+Authors@R: person("Thierry", "Moudiki", email = "thierry.moudiki@gmail.com",
+                  role = c("aut", "cre"))
+Description: Fits any 'caret' model on a matrix/data frame of predictors and
+    a response, with fixed hyperparameters (no cross-validation), and exposes
+    the result through standard S3 methods: predict(), print(), coef().
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    caret,
+    stats
+Suggests:
+    glmnet,
+    randomForest,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,6 @@
+exportPattern("^[[:alpha:]]+")
+S3method(predict, caretS3)
+S3method(print, caretS3)
+S3method(coef, caretS3)
+importFrom(stats, predict)
+importFrom(stats, coef)
