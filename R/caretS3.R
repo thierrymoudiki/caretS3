@@ -47,6 +47,7 @@ caretS3 <- function(x, y, method = "glmnet", ..., train_args = list())
                  trControl = caret::trainControl(method = "none")),
             if (!is.null(tune_grid)) list(tuneGrid = tune_grid),
             train_args)
+
   fit <- do.call(caret::train, args)
 
   structure(list(fit = fit,
